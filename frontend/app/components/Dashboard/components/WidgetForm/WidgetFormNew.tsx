@@ -90,7 +90,7 @@ const FilterSection = observer(
     const isInsights = metric.metricType === INSIGHTS;
     const isPathAnalysis = metric.metricType === USER_PATH;
     const isRetention = metric.metricType === RETENTION;
-    const canAddSeries = metric.series.length < 3;
+    const canAddSeries = true; //qmetric.series.length < 3;
 
     const isSingleSeries =
       isTable ||
